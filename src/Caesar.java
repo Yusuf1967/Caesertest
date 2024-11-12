@@ -1,30 +1,52 @@
-class Caesar {
+public class Caeser {
     private String Kt;
+    private String Gt;
     private int S;
-    private String gt;
+
+    public Caeser(){
+        Kt="";
+        Gt="";
 
 
-    public void casar() {};
+    }
+    public void verschlüsseln() {
 
-    public void verschuesseln(){};
+        for (int i = 0; i < Kt.length(); i++) {
+            Gt =Gt + (char) (Kt.charAt(i) + S);
+        }
 
-    public void entschuessel() {}
 
-    public int getASCII(char pWert) {
-        return (int) pWert;
     }
 
-    public char getChar(int pWert) {
-        return (char) pWert;
+    private void entschlüsseln(){
+
+
+    }
+    private int getASCII(char pWert){
+        return(int)pWert;
+
     }
 
-    public void getKt(String pWert) {}
+    private char getChar(int pWert){
+        return(char)pWert;
 
-    public String getKt() {
-        return (String) Kt;
     }
 
-    public void getS(int pWert) {};
+    public void setKt(String pWert){
+        this.Kt=pWert;
 
+
+    }
+
+    private String getKt(){
+        return Kt;
+
+    }
+
+
+    private void setS(int pWert){
+        this.S=pWert;
+
+    }
 
 }
