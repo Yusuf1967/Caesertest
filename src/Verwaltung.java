@@ -34,10 +34,10 @@ public class Verwaltung {
                 String schluesselString = scanner.nextLine();
                 int schluessel = Integer.parseInt(schluesselString);
                 caesar = new Caesar();
-                this.caesar.setKt(zeichenkette);
+                this.caesar.setGt(zeichenkette);
                 this.caesar.setS(schluessel);
-                this.caesar.verschluesseln();
-                System.out.println(this.caesar.getGt());
+                this.caesar.entschluesseln();
+                System.out.println(this.caesar.getKt());
             }
         }
     }
