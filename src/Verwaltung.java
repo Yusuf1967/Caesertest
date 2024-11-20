@@ -23,10 +23,15 @@ public class Verwaltung {
                 String schluesselString = scanner.nextLine();
                 int schluessel = Integer.parseInt(schluesselString);
                 caesar = new Caesar();
+                //Der nutzer muss den Klartext eingeben
                 this.caesar.setKt(zeichenkette);
+                //Der nutzer muss den Schlüssel angeben
                 this.caesar.setS(schluessel);
+                //Die verschlüsseln methode wird abgerufen um dann den KT zu verschlüsseln mit dem Schlüssel
                 this.caesar.verschluesseln();
+                //gibt den Gt aus
                 System.out.println(this.caesar.getGt());
+                //else if steht für wenn nicht option 1 dann option 2
             }else if (option == 2) {
                 System.out.println("Gib das Wort an, welches Sie entschluesseln wollen:");
                 String zeichenkette = scanner.nextLine();
@@ -34,8 +39,11 @@ public class Verwaltung {
                 String schluesselString = scanner.nextLine();
                 int schluessel = Integer.parseInt(schluesselString);
                 caesar = new Caesar();
+                //Nutzer soll Gt angeben damit es vom pogramm gemerkt wird
                 this.caesar.setGt(zeichenkette);
+                //Nutzer soll den schlüssel angeben und es wird vom programm gemerkt
                 this.caesar.setS(schluessel);
+                //entschlüsseln methode wird abgerufen
                 this.caesar.entschluesseln();
                 System.out.println(this.caesar.getKt());
             }

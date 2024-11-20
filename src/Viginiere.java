@@ -1,12 +1,15 @@
 import java.util.concurrent.locks.AbstractOwnableSynchronizer;
 
-public class Caesar {
+public class Viginiere {
     private String Kt;
-    private int S;
+    private String S;
     private String Gt;
-    public Caesar(){
+
+
+    public Viginiere(){
         Gt ="";
         Kt ="";
+
     }
     public void verschluesseln(){
         Gt="";
@@ -46,11 +49,11 @@ public class Caesar {
     public void setKt(String kt) {
         Kt = kt;
     }
-    public void setS(int s) {
+    public void setS(String s) {
         S = s;
     }
 
-    public int getS(){
+    public String  getS(){
         return S;
     }
 
