@@ -12,8 +12,9 @@ public class Verwaltung {
         scanner = new Scanner(System.in);
         while (true) {
             System.out.println("== HAUPTMENÜ ==");
-            System.out.println("[1] verschluesseln");
-            System.out.println("[2] entschluesseln");
+            System.out.println("[1] Caesar verschluesseln");
+            System.out.println("[2] Caesar entschluesseln");
+            System.out.println("[3] Viginere entschlüsseln");
             int option = scanner.nextInt();
             scanner.nextLine();
             if (option == 1) {
@@ -46,6 +47,16 @@ public class Verwaltung {
                 //entschlüsseln methode wird abgerufen
                 this.caesar.entschluesseln();
                 System.out.println(this.caesar.getKt());
+            }else if (option == 3) {
+                System.out.println("Willkommen bei Viginere. Schreibe Ok für die nächsten Schritte.");
+                String scan = scanner.nextLine();
+                System.out.println("Gib den Schlüssel als Zeichenkette an.");
+                String schluesselString = scanner.nextLine();
+                System.out.println("Gib das Wort an welches entschlüsselt werden soll.");
+                String zeichenkette = scanner.nextLine();
+                Viginere viginere = new Viginere();
+                this.Viginere.se
+
             }
         }
     }
