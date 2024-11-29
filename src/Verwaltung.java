@@ -47,15 +47,20 @@ public class Verwaltung {
                 //entschlüsseln methode wird abgerufen
                 this.caesar.entschluesseln();
                 System.out.println(this.caesar.getKt());
-            }else if (option == 3) {
-                System.out.println("Willkommen bei Viginere. Schreibe Ok für die nächsten Schritte.");
-                String scan = scanner.nextLine();
-                System.out.println("Gib den Schlüssel als Zeichenkette an.");
-                String schluesselString = scanner.nextLine();
-                System.out.println("Gib das Wort an welches entschlüsselt werden soll.");
-                String zeichenkette = scanner.nextLine();
+            }else if(option ==3) {
                 Viginere viginere = new Viginere();
-                this.Viginere.se
+                System.out.println("gib das zu verschlüsselnde Wort an");
+                h = scanner.nextLine();
+                Kt= h.toUpperCase();
+                viginere.setKt(Kt);
+                System.out.println("gib den schlüssel als wort an");
+                h = scanner.nextLine();
+                sv= h.toUpperCase();
+
+
+                viginere.setS(sv);
+                viginere.verschluesseln();
+                System.out.println("Das ist die geheimnachicht: "+viginere.getGt());
 
             }
         }
