@@ -50,12 +50,12 @@ public class Verwaltung {
             }else if(option ==3) {
                 Viginere viginere = new Viginere();
                 System.out.println("gib das zu verschlüsselnde Wort an");
-                h = scanner.nextLine();
-                Kt= h.toUpperCase();
+                String h = scanner.nextLine();
+                String Kt = h.toUpperCase();
                 viginere.setKt(Kt);
                 System.out.println("gib den schlüssel als wort an");
                 h = scanner.nextLine();
-                sv= h.toUpperCase();
+                String sv = h.toUpperCase();
 
 
                 viginere.setS(sv);

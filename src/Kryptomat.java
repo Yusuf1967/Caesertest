@@ -2,8 +2,8 @@ public abstract class Kryptomat{
     public String kt;
     public String gt;
     //
-    public abstract void verschluesseln();
-    public  abstract void entschluessln();
+    protected abstract void verschluesseln();
+    protected   abstract void entschluessln();
 
     public char getChar(int pWert) {
         return (char)pWert;

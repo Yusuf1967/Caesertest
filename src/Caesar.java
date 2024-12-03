@@ -1,6 +1,6 @@
 import java.util.concurrent.locks.AbstractOwnableSynchronizer;
 
-public class Caesar {
+public class Caesar extends Kryptomat{
     private String Kt;
     private int S;
     private String Gt;
@@ -16,6 +16,12 @@ public class Caesar {
         }
 
     }
+
+    @Override
+    protected void entschluessln() {
+
+    }
+
     public void entschluesseln(){
         Kt="";
         for (int i=0 ; i < Gt.length();i++){
@@ -29,7 +35,7 @@ public class Caesar {
 
         return  pWert;
     }
-    private char getChar(int pWert){
+    public char getChar(int pWert){
         return (char) pWert;
     }
 
