@@ -2,7 +2,7 @@ public abstract class Kryptomat{
     public String kt;
     public String gt;
     //
-    protected abstract void verschluesseln();
+    protected abstract String verschluesseln();
     protected   abstract void entschluessln();
 
     public char getChar(int pWert) {
@@ -24,4 +24,11 @@ public abstract class Kryptomat{
     public void setKt(String pKt){
         kt= pKt;
     }//kriegt das Verschlüsselte Wort welches der Benutzer angibt
+
+    public abstract void setkt(String zeichenkette);
+
+    public abstract void setgt(String zeichenkette);
+
+    public abstract void entschluesseln();
+
 }

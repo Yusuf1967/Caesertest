@@ -1,5 +1,3 @@
-import java.util.concurrent.locks.AbstractOwnableSynchronizer;
-
 public class Caesar extends Kryptomat{
     private String Kt;
     private int S;
@@ -8,13 +6,14 @@ public class Caesar extends Kryptomat{
         Gt ="";
         Kt ="";
     }
-    public void verschluesseln(){
+    public String verschluesseln(){
         Gt="";
         for (int i=0 ;i < Kt.length();i++) {
             int h = this.getASCII(Kt.charAt(i));
             Gt = Gt + this.getChar(h + S);
         }
 
+        return null;
     }
 
     @Override
@@ -52,6 +51,17 @@ public class Caesar extends Kryptomat{
     public void setKt(String kt) {
         Kt = kt;
     }
+
+    @Override
+    public void setkt(String zeichenkette) {
+
+    }
+
+    @Override
+    public void setgt(String zeichenkette) {
+
+    }
+
     public void setS(int s) {
         S = s;
     }

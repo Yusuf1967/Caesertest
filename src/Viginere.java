@@ -1,4 +1,3 @@
-import java.util.Scanner;
 //
 public class Viginere extends Kryptomat{
 
@@ -13,7 +12,7 @@ public class Viginere extends Kryptomat{
         a = 0;
         g = 0;
     }
-    public void verschluesseln()
+    public String verschluesseln()
     {
         //System.out.println("ich funktuniere");
         for (int i = 0; i< kt.length(); i++ ) {
@@ -40,6 +39,7 @@ public class Viginere extends Kryptomat{
         // die if abfrage vergleicht den wert von a mit der Länge des Schlüssels wenn a
         // größer ist als die LÄnge dann wird a wieder auf 0 gesetzt
         //heute weiß ich und gott was die Methode macht morgen nur gott!!
+        return null;
     }
     public void entschluessln() {
         a = 0;
@@ -64,6 +64,21 @@ public class Viginere extends Kryptomat{
         //die  if abfrage vergleicht den wert von a mit der Länge des Schlüssels wenn a
         // größer ist als die LÄnge dann wird a wieder auf 0 gesetzt
         //heute weiß ich und gott was die Methode macht morgen nur gott!!
+    }
+
+    @Override
+    public void setkt(String zeichenkette) {
+
+    }
+
+    @Override
+    public void setgt(String zeichenkette) {
+
+    }
+
+    @Override
+    public void entschluesseln() {
+
     }
 
     public void setS(String pWert ){sv = pWert;}
